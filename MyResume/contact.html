@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>My Resume</title>
+<link rel="stylesheet" href="resume_styles.css" type="text/css" />
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+</head>
+<body>
+	<header>
+	    <!--Tool Bar-->
+		<nav id="nav"> <a href="#nav" title="Show navigation">Show navigation</a> <a href="#" title="Hide navigation">Hide navigation</a>
+			<ul class="clearfix">
+				<li><a href="MyResume.html">Home</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="work.html">Work</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="contact.html" class="active">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- text box-->
+	<div class="container">
+	<!-- form to send email with default subject and content-->
+		<form action="MAILTO:mnagaraju@scu.edu?subject=Hello,Good%20Morning!&body=This%20is%20XXXX" method="post" enctype="text/plain">
+			<h2 class="title">Contact Me!</h2>
+			<div class="rule"></div>
+			<!--name-->
+			<p><input type="text" name="name" placeholder="name" class="contact"></p>
+			<!--email-->
+			<p><input type="email" name="mail" placeholder="email" class="contact"></p>
+			<!--message box-->
+			<p><textarea name="comment" placeholder="Add text" class="contact" id="textfield"></textarea></p>
+			<input type="submit" value="Send" id="sendBtn">
+		</form>
+	</div>
+</body>
+</html>
